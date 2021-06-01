@@ -3,4 +3,4 @@ from my_module import my_thing
 
 
 def test_answer():
-    assert my_thing.func(3) == 3
+    assert my_thing.func(3) == 4
