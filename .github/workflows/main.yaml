@@ -47,4 +47,4 @@ jobs:
       - name: SSH test
         run: ./scripts/createTestSshKey.sh
       - name: SSH test
-        run: apt-get update
+        run: sudo apt-get update
