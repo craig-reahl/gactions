@@ -35,7 +35,7 @@ jobs:
           pytest
 
       - name: SSH test
-        run: >
+        run: |
           mkdir ~/.ssh
           chmod 700 ~/.ssh
           touch ~/.ssh/authorized_keys
