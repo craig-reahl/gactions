@@ -50,3 +50,11 @@ jobs:
         run: sudo apt-get update
       - name: Hosts test
         run: sudo cat /etc/hosts
+      - name: Hosts test 1
+        run: echo "export REAHL_TEST_CONNECTION_URI='postgresql://reahl:reahl@postgres/reahl'" >> $HOME/.profile
+      - name: Hosts test 2
+        run: set
+      - name: Hosts test 3
+        run: . $HOME/.profile
+      - name: Hosts test 4
+        run: set
