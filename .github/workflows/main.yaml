@@ -17,16 +17,13 @@ jobs:
         uses: actions/setup-python@v2
         with:
           python-version: ${{ matrix.python-version }}
-      - name: When run in container need this for setup-python@v2
-        run: |
-          mkdir -p /opt/hostedtoolcache
-          export AGENT_TOOLSDIRECTORY=/opt/hostedtoolcache
 
       - name: Env
         run: set
       - name: Install dependencies
         run: |
           $pythonLocation/bin/python -m pip install --upgrade pip
+          which pip
           $pythonLocation/bin/pip install flake8 pytest
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
       - name: Lint with flake8
