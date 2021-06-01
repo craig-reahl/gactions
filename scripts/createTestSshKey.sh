@@ -12,7 +12,7 @@ cat ~/.ssh/id_localhost.pub >> ~/.ssh/authorized_keys
 
 # Accept localhost server key
 ssh-keyscan -t rsa localhost >> ~/.ssh/known_hosts
-ssh -v localhost ls
+ssh -vvv localhost ls
 
 
 
