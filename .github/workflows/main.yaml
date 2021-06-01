@@ -48,3 +48,5 @@ jobs:
         run: ./scripts/createTestSshKey.sh
       - name: SSH test
         run: sudo apt-get update
+      - name: Hosts test
+        run: sudo cat /etc/hosts
