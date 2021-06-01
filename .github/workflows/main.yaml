@@ -36,5 +36,6 @@ jobs:
 
   scripts:
     needs: build
-      - name: SSH test
-        run: ./scripts/createTestSshKey.sh
+      steps:
+        - name: SSH test
+          run: ./scripts/createTestSshKey.sh
