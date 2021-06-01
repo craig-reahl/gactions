@@ -35,6 +35,8 @@ jobs:
           pytest
 
       - name: SSH test
+        run: ls -la ~/.ssh
+      - name: SSH test
         run: cat /etc/ssh/sshd_config
       - name: SSH test
         run: ./scripts/createTestSshKey.sh
