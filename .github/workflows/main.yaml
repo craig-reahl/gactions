@@ -34,8 +34,5 @@ jobs:
         run: |
           pytest
 
-  scripts:
-    needs: build
-      steps:
-        - name: SSH test
-          run: ./scripts/createTestSshKey.sh
+      - name: SSH test
+        run: ./scripts/createTestSshKey.sh
