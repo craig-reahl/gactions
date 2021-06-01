@@ -14,3 +14,5 @@ cat ~/.ssh/id_localhost.pub >> ~/.ssh/authorized_keys
 ssh-keyscan -t rsa localhost >> ~/.ssh/known_hosts
 ssh -v localhost ls
 
+
+
